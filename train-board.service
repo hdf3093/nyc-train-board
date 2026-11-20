@@ -1,0 +1,15 @@
+[Unit]
+Description=L train arrival board
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# The LED library needs root for GPIO timing
+User=root
+WorkingDirectory=/home/pi/train-board
+ExecStart=/home/pi/train-board/.venv/bin/python /home/pi/train-board/train_board.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

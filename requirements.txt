@@ -1,0 +1,4 @@
+gtfs-realtime-bindings
+requests
+pillow==13.0.0
+# On the Pi, also build rgbmatrix from https://github.com/hzeller/rpi-rgb-led-matrix (see README)

@@ -1,0 +1,12 @@
+# private: your station, location and special dates
+my_settings.py
+
+.venv/
+__pycache__/
+.claude/
+rpi-rgb-led-matrix/
+
+# old mockups
+frame.png
+preview.png
+preview-l-suspended.png

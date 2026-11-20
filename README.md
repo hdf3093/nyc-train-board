@@ -1,6 +1,6 @@
-# NYC Train Board
+# nyc train board
 
-An LED sign for my apartment that shows when the next subway trains leave my
+an LED sign for my room that shows when the next subway trains leave my
 station, plus the weather and a clock. It runs on a Raspberry Pi driving two
 64×32 RGB LED panels (128×32 total). Korilakkuma, Chairoikoguma and Kiiroitori
 hang out in the corner and change outfits with the weather and the holidays.
@@ -31,7 +31,7 @@ today's high and low, and a 24-hour clock. If rain or snow is likely in the next
 starts. While it's actually raining or snowing, faint drops fall across the whole
 board.
 
-**The bears.** Korilakkuma reacts to the weather (umbrella, scarf, beanie,
+**Kori** Korilakkuma reacts to the weather (umbrella, scarf, beanie,
 sunglasses), hurries when it's time to leave, and falls asleep at night.
 Chairoikoguma shows up when it rains and at the times in `BUDDY_TIMES`.
 
@@ -40,29 +40,15 @@ couple of minutes: a random fact or question from `MORNING_MESSAGES`, one per da
 in shuffled order, alternating with countdowns from `COUNTDOWNS` ("12 days until
 christmas!").
 
-**Weekends.** Since I don't commute on weekends, the whole board turns into a small
+**Weekends.** Since I'm not typically in a rush on weekends, the whole board turns into a small
 room instead of train times. The window shows the actual weather, the date and
 time are on a board on the wall, and the bears do different things depending on
-the time of day: breakfast, records in the afternoon, a movie at night, then bed.
+the time of day: breakfast, music in the afternoon, a movie at night, then bed.
 Set `WEEKEND_SCENE = False` to keep the trains every day.
 
 ![weekend](preview-weekend.png)
 
-**Seasons and holidays.** The header changes color and the bears dress up:
-
-| When | What happens |
-|---|---|
-| Spring | sakura petals |
-| Fall | falling leaves |
-| October | witch hat, a bat, orange and purple letters |
-| Halloween | ghost costume and a jack-o'-lantern |
-| December | Santa outfit, Christmas tree, string lights, snow |
-| New Year's, birthdays | party hat and confetti |
-| Valentine's Day, anniversaries | Chairoikoguma visits, heart fireworks |
-| St. Patrick's Day | green letters and clovers |
-| Easter | bunny ears |
-| 4th of July | fireworks |
-| Thanksgiving | harvest colors |
+**Seasons and holidays.** The header changes color and the bears dress up!!
 
 Birthdays and anniversaries come from `PERSONAL_DAYS` in your settings.
 
@@ -92,9 +78,6 @@ There's no HAT or soldering; the Pi is wired straight to the panel with jumpers.
 If you use an Adafruit RGB Matrix Bonnet instead, set `WIRING = "adafruit-hat"`.
 
 ## Wiring
-
-Do this with everything unplugged.
-
 ### Pi to the first panel
 
 Use the panel's input connector (the one with arrows pointing away from it, or the
@@ -223,6 +206,3 @@ All of these can go in `my_settings.py`:
 Sprites are drawn as text grids in `train_board.py`, so they're easy to edit.
 
 ---
-
-Korilakkuma, Chairoikoguma and Kiiroitori are characters by San-X. This is a
-personal, non-commercial fan project.
